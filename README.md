@@ -1,5 +1,8 @@
-# How to Build and Run `bid.tsx`
+# Able to create collection bids while having insufficient funds
+<img width="398" height="384" alt="image" src="https://github.com/user-attachments/assets/a4dbaef1-897f-4356-a7b0-b4354ddbd851" />
 
+
+# How to Build and Run `bid.tsx`
 This project is set up to run `bid.tsx` using TypeScript and Node.js.
 
 ## Prerequisites
