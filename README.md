@@ -2,7 +2,7 @@
 <img width="398" height="384" alt="image" src="https://github.com/user-attachments/assets/a4dbaef1-897f-4356-a7b0-b4354ddbd851" />
 
 
-# How to Build and Run `bid.tsx`
+# Steps to Reproduce
 This project is set up to run `bid.tsx` using TypeScript and Node.js.
 
 ## Prerequisites
@@ -32,15 +32,10 @@ You can run the script directly using `ts-node`:
 npx ts-node bid.tsx
 ```
 
-## Building (Optional)
-
-If you want to compile the TypeScript code to JavaScript:
-
-1.  **Build**:
-    ```bash
-    npx tsc
-    ```
-    This will create a `dist` directory with the compiled JavaScript.
+## Actual Result
+The user is able to place a collection bid of 100,000 SOL, despite the wallet containing only 0.09 SOL.
+## Expected Result
+The API should enforce the same balance validation as the UI, preventing users from placing offers that exceed their available wallet balance — especially extremely large bids (e.g., ~$100M).
 
 2.  **Run Compiled Code**:
     ```bash
