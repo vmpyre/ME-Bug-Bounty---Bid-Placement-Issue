@@ -33,7 +33,7 @@ npx ts-node bid.tsx
 ```
 
 # Actual Result
-The user is able to place a collection bid of 100,000 SOL, despite the wallet containing only 0.09 SOL.
+The user is able to place a collection bid of 100,000 SOL, despite the wallet containing a very small amount (e.g. 0.09).
 
 # Expected Result
 The API should enforce the same balance validation as the UI, preventing users from placing offers that exceed their available wallet balance — especially extremely large bids (e.g., ~$100M).
