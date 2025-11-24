@@ -32,12 +32,8 @@ You can run the script directly using `ts-node`:
 npx ts-node bid.tsx
 ```
 
-## Actual Result
+# Actual Result
 The user is able to place a collection bid of 100,000 SOL, despite the wallet containing only 0.09 SOL.
-## Expected Result
-The API should enforce the same balance validation as the UI, preventing users from placing offers that exceed their available wallet balance — especially extremely large bids (e.g., ~$100M).
 
-2.  **Run Compiled Code**:
-    ```bash
-    node dist/bid.js
-    ```
+# Expected Result
+The API should enforce the same balance validation as the UI, preventing users from placing offers that exceed their available wallet balance — especially extremely large bids (e.g., ~$100M).
